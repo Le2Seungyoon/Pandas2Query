@@ -4,5 +4,25 @@ Pandas는 데이터 분석 및 조작을 위한 굉장히 편리한 패키지이
 그렇다고 DB를 Python 환경으로 업로드 후 Pandas를 사용하는 것은 비효율적입니다.   
 따라서 Pandas에서 빈번하게 활용하는 기능들을 쿼리로 제시하여,  
 Python 사용자들의 SQL 능력을 향상시키고자 합니다.  
-## 데이터 탐색(Exploration)
-## 데이터 조작(Manipulation)
+
+## 목차
+```
+sample  
+├── data.csv         
+├── total.ipynb           
+│   ├── data         
+│   └── data.columns                 
+├── column.ipynb  
+│   ├── data['column']
+│   ├── data['column'].dtype              
+│   ├── data['column'].unique()
+│   ├── data['column'].nunique()
+│   ├── data['column'].value_counts()
+│   └── data['column'].value_counts(normalize=True)
+├── nan.ipynb  
+│   ├── data['column'].isnull().sum()                
+│   ├── data[data['column'].isna()]
+│   └── data[~data['column'].isna()]                         
+└── statistics.ipynb        
+    └── data['column'].describe()
+```
