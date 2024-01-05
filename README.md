@@ -29,7 +29,7 @@ sample
 4개의 .ipynb 파일은 각각 다음 4가지에 대해서 다루고 있습니다.  
 1) [전체 데이터를 탐색할 경우](https://github.com/Le2Seungyoon/Pandas2Query/blob/main/sample/total.ipynb)
 2) [데이터에서 특정 컬럼을 탐색할 경우](https://github.com/Le2Seungyoon/Pandas2Query/blob/main/sample/column.ipynb)
-3) 결측값에 대해서 탐색할 경우
+3) [결측값에 대해서 탐색할 경우](https://github.com/Le2Seungyoon/Pandas2Query/blob/main/sample/nan.ipynb)
 4) 통계량을 구하는 경우
 
 각각에 대해서는 링크를 참고 부탁드립니다.  
