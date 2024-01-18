@@ -55,3 +55,27 @@ FROM table
 WHERE c_time >= '2023-01-01 00:00:00' AND c_time <= '2023-01-31 00:00:00'
 '''
 ```
+
+```
+WITH TEMP AS (
+SELECT Log.views.*
+FROM Log.views
+INNER JOIN table.contents ON Log.views.id = table.contents.id
+)
+SELECT COUNT(*)
+FROM TEMP
+WHERE c_time >= '2023-03-01 00:00:00' AND c_time <= '2023-03-31 00:00:00'
+```
+
+```
+WITH TEMP AS (
+    SELECT Log.views.*, EXTRACT(MONTH FROM Log.views.c_time) AS month
+    FROM Log.views
+    INNER JOIN table.contents ON Log.views.id = table.contents.id
+)
+SELECT month, COUNT(*)
+FROM TEMP
+WHERE c_time >= '2023-01-01 00:00:00' AND c_time <= '2023-12-31 00:00:00'
+GROUP BY month
+ORDER BY month
+```
